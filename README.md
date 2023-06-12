@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/TechnoX0/FM-Age-Calculator)
+- Live Site URL: [Live Site](https://technox0.github.io/FM-Age-Calculator/)
 
 ### Built with
 
