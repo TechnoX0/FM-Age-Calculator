@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');</style>
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+<body>
+  <div id="wrap">
+    <div id="calculator">
+      <div class="input-wrap">
+        <div class="input">
+          <p class="title" data-date-title="day">Day</p>
+          <input type="number" class="date" data-date-input="day" placeholder="DD" value="14">
+          <p class="error" data-date-error="day"></p>
+        </div>
+        <div class="input">
+          <p class="title" data-date-title="month">Month</p>
+          <input type="number" class="date" data-date-input="month" placeholder="MM" value="4">
+          <p class="error" data-date-error="month"></p>
+        </div>
+        <div class="input">
+          <p class="title" data-date-title="year">Year</p>
+          <input type="number" class="date" data-date-input="year" placeholder="YYYY" value="2003">
+          <p class="error" data-date-error="year"></p>
+        </div>
+      </div>
+
+      <div class="action-wrap">
+        <button id="caclulate-button"><img src="assets\images\icon-arrow.svg" class="svg-image"></button>
+        <div class="line"></div>
+      </div>
+
+      <div class="output-wrap">
+        <p class="output"><span class="out" data-display="year">--</span> years</p>
+        <p class="output"><span class="out" data-display="month">--</span> months</p>
+        <p class="output"><span class="out" data-display="day">--</span> days</p>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

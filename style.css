@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 8%);
+}
+
+#wrap {
+    display: grid;
+    place-items: center;
+    padding: 5rem 1rem;
+    height: 100vh;
+    background: hsl(0, 0%, 94%);
+}
+
+#calculator {
+    padding: 2rem 1.5rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 100px;
+}
+
+.input-wrap {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0;
+}
+
+.input {
+    font-size: 16px;
+    width: 33%;
+}
+
+.input .title {
+    margin: .5rem 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: .2rem;
+}
+
+.input input {
+    width: 100%;
+    margin: .3rem 0;
+    padding: .6rem .8rem;
+    font-size: 1.3em;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.input input:focus {
+    caret-color: hsl(259, 100%, 65%);
+    border: 2px solid hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  height: 100%;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input .error {
+    margin-top: .5rem;
+    line-height: .8rem;
+    font-weight: 400;
+    font-size: .7rem;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+.action-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.action-wrap button {
+    margin: 2rem 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(259, 100%, 65%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+.action-wrap button:hover {
+    background: hsl(0, 0%, 8%)
+}
+
+.action-wrap .svg-image {
+    width: 60%;
+    height: 60%;
+}
+
+.action-wrap .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: hsl(0, 0%, 94%);
+}
+
+.output {
+    font-size: 54px;
+    line-height: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.output span {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 376px) {
+    #calculator {
+        padding: 3rem 4rem;
+        width: 900px;
+        border-radius: 20px 20px 200px;
+    }
+
+    .input-wrap {
+        gap: 2rem;
+    }
+
+    .input {
+        font-size: 32px;
+        max-width: 11.5rem;
+    }
+
+    .input .title {
+        font-size: 1rem;
+    }
+
+    .input input {
+        margin: 0;
+        padding: .6rem 1.4rem;
+    }
+
+    .input .error {
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+
+    .action-wrap {
+        justify-content: right;
+    }
+
+    .action-wrap button {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .output {
+        font-size: 120px;
+        line-height: 130px;
+    }
+}
